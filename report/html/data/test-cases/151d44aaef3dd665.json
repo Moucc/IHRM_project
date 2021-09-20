@@ -1,0 +1,477 @@
+{
+  "uid" : "151d44aaef3dd665",
+  "name" : "员工增删改查，但删除会失败验证",
+  "fullName" : "testcase.test_employee_manage.Test_employee_manage#test_employee_manage",
+  "historyId" : "9b8d6535a59216150ebd0fa25d607a90",
+  "time" : {
+    "start" : 1632144220444,
+    "stop" : 1632144220909,
+    "duration" : 465
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <testcase.test_employee_manage.Test_employee_manage object at 0x0000028EE6679A30>\nenvironment_url = 'http://ihrm-test.itheima.net'\nget_token = {'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}\n\n    @allure.story('员工增删改查流程测试')\n    @allure.title('员工增删改查，但删除会失败验证')\n    @pytest.mark.usefixtures('re_login')\n    def test_employee_manage(self, environment_url, get_token):\n        try:\n            data = build_data()\n            res = EmployeeManage().add_employee(environment_url, data.get('add_data'), get_token)\n            common_assert(res, data.get('expected'))\n            with allure.step('获取新增员工ID'):\n                Test_employee_manage.employee_id = res.json().get('data').get('id')\n            with allure.step('验证查询员工username与新增员工一致'):\n                res = EmployeeManage().query_employee(environment_url, Test_employee_manage.employee_id, get_token)\n                assert data.get('add_data').get('username') == res.json().get('data').get('username')\n            res = EmployeeManage().modify_employee(environment_url, Test_employee_manage.employee_id, data.get('modify_data'), get_token)\n            common_assert(res, data.get('expected'))\n            with allure.step('验证查询员工username与修改后员工一致'):\n                res = EmployeeManage().query_employee(environment_url, Test_employee_manage.employee_id, get_token)\n                assert data.get('modify_data').get('username') == res.json().get('data').get('username')\n            res = EmployeeManage().delete_employee(environment_url, Test_employee_manage.employee_id, get_token)\n            common_assert(res, data.get('expected'))\n            with allure.step('验证删除员工后，查询员工返回空'):\n                res = EmployeeManage().query_employee(environment_url, Test_employee_manage.employee_id, get_token)\n                common_assert(res, data.get('expected_after_delete'))\n        except Exception as e:\n            err = str(res.json()) + '\\n' + str(e)\n            MyLog.error(err)\n>           raise e\n\ntest_employee_manage.py:105: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_employee_manage.py:101: in test_employee_manage\n    common_assert(res, data.get('expected_after_delete'))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>\nexpected = {'code': 20005, 'message': '查询员工失败', 'status_code': 200, 'success': False}\n\n    @allure.step('进行断言')\n    def common_assert(res, expected):\n        '''\n        对响应体进行断言\n        :param res: 请求响应体\n        :param expected: 字典：{success: true， code: 10000， message: '操作成功'， status_code: 200}\n        :return:assert断言\n        '''\n        assert expected.get('status_code') == res.status_code\n>       assert expected.get('code') == res.json().get('code')\nE       AssertionError\n\n..\\utils\\commen_assert.py:13: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "前置登陆操作",
+    "time" : {
+      "start" : 1632144220364,
+      "stop" : 1632144220439,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登陆操作",
+      "time" : {
+        "start" : 1632144220365,
+        "stop" : 1632144220439,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "login_data",
+        "value" : "{'mobile': '13800000002', 'password': '123456'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "从config.yaml获取环境IP",
+    "time" : {
+      "start" : 1632144220364,
+      "stop" : 1632144220364,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "获取token",
+    "time" : {
+      "start" : 1632144220440,
+      "stop" : 1632144220443,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <testcase.test_employee_manage.Test_employee_manage object at 0x0000028EE6679A30>\nenvironment_url = 'http://ihrm-test.itheima.net'\nget_token = {'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}\n\n    @allure.story('员工增删改查流程测试')\n    @allure.title('员工增删改查，但删除会失败验证')\n    @pytest.mark.usefixtures('re_login')\n    def test_employee_manage(self, environment_url, get_token):\n        try:\n            data = build_data()\n            res = EmployeeManage().add_employee(environment_url, data.get('add_data'), get_token)\n            common_assert(res, data.get('expected'))\n            with allure.step('获取新增员工ID'):\n                Test_employee_manage.employee_id = res.json().get('data').get('id')\n            with allure.step('验证查询员工username与新增员工一致'):\n                res = EmployeeManage().query_employee(environment_url, Test_employee_manage.employee_id, get_token)\n                assert data.get('add_data').get('username') == res.json().get('data').get('username')\n            res = EmployeeManage().modify_employee(environment_url, Test_employee_manage.employee_id, data.get('modify_data'), get_token)\n            common_assert(res, data.get('expected'))\n            with allure.step('验证查询员工username与修改后员工一致'):\n                res = EmployeeManage().query_employee(environment_url, Test_employee_manage.employee_id, get_token)\n                assert data.get('modify_data').get('username') == res.json().get('data').get('username')\n            res = EmployeeManage().delete_employee(environment_url, Test_employee_manage.employee_id, get_token)\n            common_assert(res, data.get('expected'))\n            with allure.step('验证删除员工后，查询员工返回空'):\n                res = EmployeeManage().query_employee(environment_url, Test_employee_manage.employee_id, get_token)\n                common_assert(res, data.get('expected_after_delete'))\n        except Exception as e:\n            err = str(res.json()) + '\\n' + str(e)\n            MyLog.error(err)\n>           raise e\n\ntest_employee_manage.py:105: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_employee_manage.py:101: in test_employee_manage\n    common_assert(res, data.get('expected_after_delete'))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>\nexpected = {'code': 20005, 'message': '查询员工失败', 'status_code': 200, 'success': False}\n\n    @allure.step('进行断言')\n    def common_assert(res, expected):\n        '''\n        对响应体进行断言\n        :param res: 请求响应体\n        :param expected: 字典：{success: true， code: 10000， message: '操作成功'， status_code: 200}\n        :return:assert断言\n        '''\n        assert expected.get('status_code') == res.status_code\n>       assert expected.get('code') == res.json().get('code')\nE       AssertionError\n\n..\\utils\\commen_assert.py:13: AssertionError",
+    "steps" : [ {
+      "name" : "员工增删改查流程测试-从manage_employee获取数据",
+      "time" : {
+        "start" : 1632144220444,
+        "stop" : 1632144220446,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发送新增员工请求，获取响应体",
+      "time" : {
+        "start" : 1632144220446,
+        "stop" : 1632144220519,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "add_data",
+        "value" : "{'username': 'jack1666t1331112', 'mobile': '13116933086', 'timeOfEntry': '2020-07-09', 'formOfEmployment': 1, 'workNumber': '169333', 'departmentName': '销售', 'departmentId': '1266699057968001024', 'correctionTime': '2020-07-30T16:00:00.000Z'}"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144220519,
+        "stop" : 1632144220520,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "获取新增员工ID",
+      "time" : {
+        "start" : 1632144220520,
+        "stop" : 1632144220520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "验证查询员工username与新增员工一致",
+      "time" : {
+        "start" : 1632144220520,
+        "stop" : 1632144220588,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "发送查询员工请求，获取响应体",
+        "time" : {
+          "start" : 1632144220520,
+          "stop" : 1632144220588,
+          "duration" : 68
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'http://ihrm-test.itheima.net'"
+        }, {
+          "name" : "employee_id",
+          "value" : "'1439943408415145984'"
+        }, {
+          "name" : "token",
+          "value" : "{'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发送修改员工请求，获取响应体",
+      "time" : {
+        "start" : 1632144220589,
+        "stop" : 1632144220670,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "employee_id",
+        "value" : "'1439943408415145984'"
+      }, {
+        "name" : "modify_data",
+        "value" : "{'username': 'user0920'}"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144220670,
+        "stop" : 1632144220670,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "验证查询员工username与修改后员工一致",
+      "time" : {
+        "start" : 1632144220670,
+        "stop" : 1632144220759,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "发送查询员工请求，获取响应体",
+        "time" : {
+          "start" : 1632144220670,
+          "stop" : 1632144220759,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'http://ihrm-test.itheima.net'"
+        }, {
+          "name" : "employee_id",
+          "value" : "'1439943408415145984'"
+        }, {
+          "name" : "token",
+          "value" : "{'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发送删除员工请求，获取响应体",
+      "time" : {
+        "start" : 1632144220759,
+        "stop" : 1632144220835,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "employee_id",
+        "value" : "'1439943408415145984'"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144220835,
+        "stop" : 1632144220835,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "验证删除员工后，查询员工返回空",
+      "time" : {
+        "start" : 1632144220835,
+        "stop" : 1632144220908,
+        "duration" : 73
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"D:\\IHRM_project\\testcase\\test_employee_manage.py\", line 101, in test_employee_manage\n    common_assert(res, data.get('expected_after_delete'))\n  File \"E:\\Python\\Python38\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\IHRM_project\\utils\\commen_assert.py\", line 13, in common_assert\n    assert expected.get('code') == res.json().get('code')\n",
+      "steps" : [ {
+        "name" : "发送查询员工请求，获取响应体",
+        "time" : {
+          "start" : 1632144220835,
+          "stop" : 1632144220907,
+          "duration" : 72
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'http://ihrm-test.itheima.net'"
+        }, {
+          "name" : "employee_id",
+          "value" : "'1439943408415145984'"
+        }, {
+          "name" : "token",
+          "value" : "{'Authorization': 'Bearer 0724d85c-006a-4fad-ac42-518886b54b3d'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "进行断言",
+        "time" : {
+          "start" : 1632144220907,
+          "stop" : 1632144220907,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "AssertionError\n",
+        "statusTrace" : "  File \"E:\\Python\\Python38\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\IHRM_project\\utils\\commen_assert.py\", line 13, in common_assert\n    assert expected.get('code') == res.json().get('code')\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "res",
+          "value" : "<Response [200]>"
+        }, {
+          "name" : "expected",
+          "value" : "{'success': False, 'code': 20005, 'message': '查询员工失败', 'status_code': 200}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : true,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "66de16a223d6191c",
+      "name" : "log",
+      "source" : "66de16a223d6191c.txt",
+      "type" : "text/plain",
+      "size" : 849
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "基本信息管理模块"
+  }, {
+    "name" : "story",
+    "value" : "员工增删改查流程测试"
+  }, {
+    "name" : "feature",
+    "value" : "员工管理流程测试"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('re_login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_employee_manage"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_employee_manage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-LM9EFOVP"
+  }, {
+    "name" : "thread",
+    "value" : "13272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_employee_manage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c35f11362b3afe86",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1632144080409,
+        "stop" : 1632144080492,
+        "duration" : 83
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('re_login')" ]
+  },
+  "source" : "151d44aaef3dd665.json",
+  "parameterValues" : [ ]
+}

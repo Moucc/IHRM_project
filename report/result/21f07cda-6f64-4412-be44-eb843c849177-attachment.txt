@@ -1,0 +1,10 @@
+ERROR    utils.MyLog:MyLog.py:42 {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942803999260672'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError

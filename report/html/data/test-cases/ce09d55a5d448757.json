@@ -1,0 +1,223 @@
+{
+  "uid" : "ce09d55a5d448757",
+  "name" : "新增员工jack2666t1965112-只有必填项",
+  "fullName" : "testcase.test_employee_manage.Test_add_employee#test_add_empolyee",
+  "historyId" : "cbcaaba18dc530e70324188c0e834cb3",
+  "time" : {
+    "start" : 1632144218671,
+    "stop" : 1632144218746,
+    "duration" : 75
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <testcase.test_employee_manage.Test_add_employee object at 0x0000028EE66D1D00>\nenvironment_url = 'http://ihrm-test.itheima.net'\nadd_data = {'mobile': '13426965086', 'username': 'jack2666t1965112', 'workNumber': '199653'}\nexpected = {'code': 10000, 'message': '操作成功', 'status_code': 200, 'success': True}\ntitle = '新增员工jack2666t1965112-只有必填项'\nget_token = {'Authorization': 'Bearer 8c6258e3-e7b4-4aa3-a7d6-f6f98dfe96e0'}\n\n    @allure.story('员工新增数据驱动测试')\n    @allure.title('{title}')\n    @pytest.mark.usefixtures('re_login')\n    @pytest.mark.parametrize('title, add_data, expected', My_return_data.return_test_data('add_employee.yaml'))\n    def test_add_empolyee(self, environment_url, add_data, expected, title, get_token):\n        try:\n            res = EmployeeManage().add_employee(environment_url, add_data, get_token)\n            common_assert(res, expected)\n        except Exception as e:\n            err = str(res.json()) + '\\n' + str(e)\n            MyLog.error(err)\n>           raise e\n\ntest_employee_manage.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_employee_manage.py:31: in test_add_empolyee\n    common_assert(res, expected)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>\nexpected = {'code': 10000, 'message': '操作成功', 'status_code': 200, 'success': True}\n\n    @allure.step('进行断言')\n    def common_assert(res, expected):\n        '''\n        对响应体进行断言\n        :param res: 请求响应体\n        :param expected: 字典：{success: true， code: 10000， message: '操作成功'， status_code: 200}\n        :return:assert断言\n        '''\n        assert expected.get('status_code') == res.status_code\n>       assert expected.get('code') == res.json().get('code')\nE       AssertionError\n\n..\\utils\\commen_assert.py:13: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "前置登陆操作",
+    "time" : {
+      "start" : 1632144218595,
+      "stop" : 1632144218665,
+      "duration" : 70
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登陆操作",
+      "time" : {
+        "start" : 1632144218595,
+        "stop" : 1632144218664,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "login_data",
+        "value" : "{'mobile': '13800000002', 'password': '123456'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "获取token",
+    "time" : {
+      "start" : 1632144218665,
+      "stop" : 1632144218670,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "从config.yaml获取环境IP",
+    "time" : {
+      "start" : 1632144218594,
+      "stop" : 1632144218594,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <testcase.test_employee_manage.Test_add_employee object at 0x0000028EE66D1D00>\nenvironment_url = 'http://ihrm-test.itheima.net'\nadd_data = {'mobile': '13426965086', 'username': 'jack2666t1965112', 'workNumber': '199653'}\nexpected = {'code': 10000, 'message': '操作成功', 'status_code': 200, 'success': True}\ntitle = '新增员工jack2666t1965112-只有必填项'\nget_token = {'Authorization': 'Bearer 8c6258e3-e7b4-4aa3-a7d6-f6f98dfe96e0'}\n\n    @allure.story('员工新增数据驱动测试')\n    @allure.title('{title}')\n    @pytest.mark.usefixtures('re_login')\n    @pytest.mark.parametrize('title, add_data, expected', My_return_data.return_test_data('add_employee.yaml'))\n    def test_add_empolyee(self, environment_url, add_data, expected, title, get_token):\n        try:\n            res = EmployeeManage().add_employee(environment_url, add_data, get_token)\n            common_assert(res, expected)\n        except Exception as e:\n            err = str(res.json()) + '\\n' + str(e)\n            MyLog.error(err)\n>           raise e\n\ntest_employee_manage.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_employee_manage.py:31: in test_add_empolyee\n    common_assert(res, expected)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>\nexpected = {'code': 10000, 'message': '操作成功', 'status_code': 200, 'success': True}\n\n    @allure.step('进行断言')\n    def common_assert(res, expected):\n        '''\n        对响应体进行断言\n        :param res: 请求响应体\n        :param expected: 字典：{success: true， code: 10000， message: '操作成功'， status_code: 200}\n        :return:assert断言\n        '''\n        assert expected.get('status_code') == res.status_code\n>       assert expected.get('code') == res.json().get('code')\nE       AssertionError\n\n..\\utils\\commen_assert.py:13: AssertionError",
+    "steps" : [ {
+      "name" : "发送新增员工请求，获取响应体",
+      "time" : {
+        "start" : 1632144218672,
+        "stop" : 1632144218745,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "add_data",
+        "value" : "{'username': 'jack2666t1965112', 'mobile': '13426965086', 'workNumber': '199653'}"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer 8c6258e3-e7b4-4aa3-a7d6-f6f98dfe96e0'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144218745,
+        "stop" : 1632144218745,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"E:\\Python\\Python38\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\IHRM_project\\utils\\commen_assert.py\", line 13, in common_assert\n    assert expected.get('code') == res.json().get('code')\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "1b74ada55eefc648",
+      "name" : "log",
+      "source" : "1b74ada55eefc648.txt",
+      "type" : "text/plain",
+      "size" : 536
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "员工新增数据驱动测试"
+  }, {
+    "name" : "epic",
+    "value" : "基本信息管理模块"
+  }, {
+    "name" : "feature",
+    "value" : "新增员工测试"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('re_login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_employee_manage"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_add_employee"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-LM9EFOVP"
+  }, {
+    "name" : "thread",
+    "value" : "13272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_employee_manage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "add_data",
+    "value" : "{'username': 'jack2666t1965112', 'mobile': '13426965086', 'workNumber': '199653'}"
+  }, {
+    "name" : "expected",
+    "value" : "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}"
+  }, {
+    "name" : "title",
+    "value" : "'新增员工jack2666t1965112-只有必填项'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c49399a06ebcab4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1632144078623,
+        "stop" : 1632144078696,
+        "duration" : 73
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('re_login')" ]
+  },
+  "source" : "ce09d55a5d448757.json",
+  "parameterValues" : [ "{'username': 'jack2666t1965112', 'mobile': '13426965086', 'workNumber': '199653'}", "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}", "'新增员工jack2666t1965112-只有必填项'" ]
+}

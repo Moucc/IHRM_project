@@ -1,0 +1,24 @@
+add_data:
+  "username": "jack1666t1331112"
+  "mobile": "13116933086"
+  "timeOfEntry": "2020-07-09"
+  "formOfEmployment": 1
+  "workNumber": "169333"
+  "departmentName": "销售"
+  "departmentId": "1266699057968001024"
+  "correctionTime": "2020-07-30T16:00:00.000Z"
+
+modify_data:
+  "username": "user0920"
+
+expected:
+  success: true
+  code: 10000
+  message: '操作成功'
+  status_code: 200
+
+expected_after_delete:
+  "success": false
+  "code": 20005
+  "message": "查询员工失败"
+  "status_code": 200

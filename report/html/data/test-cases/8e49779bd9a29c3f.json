@@ -1,0 +1,149 @@
+{
+  "uid" : "8e49779bd9a29c3f",
+  "name" : "mobile参数为字符",
+  "fullName" : "testcase.test_login.Test_login#test_login",
+  "historyId" : "dd7c3d8a0a08e27e2a526b54f6866216",
+  "time" : {
+    "start" : 1632144221379,
+    "stop" : 1632144221444,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "从config.yaml获取环境IP",
+    "time" : {
+      "start" : 1632144221377,
+      "stop" : 1632144221378,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登陆操作",
+      "time" : {
+        "start" : 1632144221379,
+        "stop" : 1632144221444,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "login_data",
+        "value" : "{'mobile': 'ABS', 'passw1ord': '123456'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144221444,
+        "stop" : 1632144221444,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "多场景登陆测试"
+  }, {
+    "name" : "epic",
+    "value" : "登陆"
+  }, {
+    "name" : "story",
+    "value" : "数据驱动登陆测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-LM9EFOVP"
+  }, {
+    "name" : "thread",
+    "value" : "13272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "ask",
+    "value" : "{'mobile': 'ABS', 'passw1ord': '123456'}"
+  }, {
+    "name" : "expected",
+    "value" : "{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'status_code': 200}"
+  }, {
+    "name" : "title",
+    "value" : "'mobile参数为字符'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1fff0dadf4e66290",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632144080976,
+        "stop" : 1632144081040,
+        "duration" : 64
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8e49779bd9a29c3f.json",
+  "parameterValues" : [ "{'mobile': 'ABS', 'passw1ord': '123456'}", "{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'status_code': 200}", "'mobile参数为字符'" ]
+}

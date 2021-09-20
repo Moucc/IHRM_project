@@ -1,0 +1,143 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "name为空，新增失败",
+        "uid" : "9b6e26668e823362",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144216419,
+          "stop" : 1632144216498,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': None, 'code': 9527}", "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}", "'name为空，新增失败'" ]
+      }, {
+        "name" : "错参name1，新增失败",
+        "uid" : "b17135ade5b598ab",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144216947,
+          "stop" : 1632144217022,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name1': '28s测试研究部2分队', 'code': 9527}", "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}", "'错参name1，新增失败'" ]
+      }, {
+        "name" : "少参code：新增28s测试研究部3分队失败",
+        "uid" : "8e4f45ce2ccd45",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144217114,
+          "stop" : 1632144217181,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '28s测试研究部3分队', 'introduce': '一个很垃圾的研究部', 'pid': 9526}", "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}", "'少参code：新增28s测试研究部3分队失败'" ]
+      }, {
+        "name" : "（必填项重复）新增失败部门：28s测试研究部2分队",
+        "uid" : "a9045ebef2144ff2",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144217280,
+          "stop" : 1632144217356,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '28s测试研究部2分队', 'code': 9527, 'introduce': '一个很垃圾的研究部', 'pid': 9526}", "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}", "'（必填项重复）新增失败部门：28s测试研究部2分队'" ]
+      }, {
+        "name" : "成功新增员工jack1666t9551965",
+        "uid" : "2c8b80afab9dbd28",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144217876,
+          "stop" : 1632144217954,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'jack1666t1951965', 'mobile': '13116954965', 'timeOfEntry': '2020-07-09', 'formOfEmployment': 1, 'workNumber': '169653', 'departmentName': '销售', 'departmentId': '1266699057968001024', 'correctionTime': '2020-07-30T16:00:00.000Z'}", "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}", "'成功新增员工jack1666t9551965'" ]
+      }, {
+        "name" : "新增员工jack2666t1965112-只有必填项",
+        "uid" : "ce09d55a5d448757",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144218671,
+          "stop" : 1632144218746,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'jack2666t1965112', 'mobile': '13426965086', 'workNumber': '199653'}", "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}", "'新增员工jack2666t1965112-只有必填项'" ]
+      }, {
+        "name" : "成功新增员工jack1666t1696512-必填项+部分选填项",
+        "uid" : "3315bf2a6e12af6",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144218847,
+          "stop" : 1632144218919,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'jack1666t1696512', 'mobile': '1311965226', 'workNumber': '169653', 'departmentName': '销售', 'departmentId': '1266699057968001024'}", "{'success': True, 'code': 10000, 'message': '操作成功', 'status_code': 200}", "'成功新增员工jack1666t1696512-必填项+部分选填项'" ]
+      }, {
+        "name" : "修改员工不存在参数user：123",
+        "uid" : "5fe8f4d45cef447a",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144219958,
+          "stop" : 1632144220034,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'success': False, 'code': 20001, 'message': '失败', 'status_code': 200}", "{'user': '123'}", "'修改员工不存在参数user：123'" ]
+      }, {
+        "name" : "员工增删改查，但删除会失败验证",
+        "uid" : "151d44aaef3dd665",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144220444,
+          "stop" : 1632144220909,
+          "duration" : 465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用户名错误登陆",
+        "uid" : "18baeae331c77b78",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632144220997,
+          "stop" : 1632144221069,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'mobile': '13800000003', 'password': '123456'}", "{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'status_code': 200}", "'用户名错误登陆'" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

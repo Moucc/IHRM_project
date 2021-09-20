@@ -1,0 +1,56 @@
+- test:
+    title:
+      '成功修改员工username为：jack1666t5111112'
+    ask:
+      "username": "jack1666t5111112"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '成功修改员工departmentName为：部门名称1'
+    ask:
+      "departmentName": "部门名称1"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '成功修改员工departmentId为：6666666667968001024'
+    ask:
+      "departmentId": "6666666667968001024"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '修改员工不存在参数user：123'
+    ask:
+      "user": "123"
+    excepted:
+      success: false
+      code: 20001
+      message: '失败'
+      status_code: 200
+
+- test:
+    title:
+      '成功修改员工username为：jack1666t5555512,部门为销售1，部门ID为6666699057968001024'
+    ask:
+      "username": "jack1666t5555512"
+      "departmentName": "销售1"
+      "departmentId": "6666699057968001024"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200

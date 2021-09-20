@@ -1,0 +1,86 @@
+- test:
+    title: '成功新增部门：28s测试研究部'
+    ask:
+      name: "28s测试研究部"
+      code: 9527
+      manager: 'MYQ'
+      introduce: '一个很垃圾的研究部'
+      pid: 9526
+      createTime: "2021-11-24T07:59:04.000+0000"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title: '（全必填项）成功新增部门：28s测试研究部1分队'
+    ask:
+      name: "28s测试研究部"
+      code: 9527
+      createTime: "XXX时间"
+    excepted:
+      success: false
+      code: 99999
+      message: '请稍后重试'
+      status_code: 200
+
+- test:
+    title: 'name为空，新增失败'
+    ask:
+      name: ~
+      code: 9527
+    excepted:
+      success: false
+      code: 99999
+      message: '请稍后重试'
+      status_code: 200
+
+- test:
+    title: '（必填+部分选填）成功新增部门：28s测试研究部2分队'
+    ask:
+      name: "28s测试研究部2分队"
+      code: 9527
+      introduce: '一个很垃圾的研究部'
+      pid: 9526
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title: '错参name1，新增失败'
+    ask:
+      name1: "28s测试研究部2分队"
+      code: 9527
+    excepted:
+      success: false
+      code: 99999
+      message: '请稍后重试'
+      status_code: 200
+
+- test:
+    title: '少参code：新增28s测试研究部3分队失败'
+    ask:
+      name: "28s测试研究部3分队"
+      introduce: '一个很垃圾的研究部'
+      pid: 9526
+    excepted:
+      success: false
+      code: 99999
+      message: '请稍后重试'
+      status_code: 200
+
+- test:
+    title: '（必填项重复）新增失败部门：28s测试研究部2分队'
+    ask:
+      name: "28s测试研究部2分队"
+      code: 9527
+      introduce: '一个很垃圾的研究部'
+      pid: 9526
+    excepted:
+      success: false
+      code: 99999
+      message: '请稍后重试'
+      status_code: 200

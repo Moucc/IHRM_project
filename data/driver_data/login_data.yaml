@@ -1,0 +1,83 @@
+- test:
+    title:
+      '正确登陆测试'
+    ask:
+      'mobile': '13800000002'
+      'password': '123456'
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '用户名错误登陆'
+    ask:
+      'mobile': '13800000003'
+      'password': '123456'
+    excepted:
+      success: false
+      code: 20001
+      message: '用户名或密码错误'
+      status_code: 200
+
+- test:
+    title:
+      '缺少参数password登陆'
+    ask:
+      'mobile': '13800000002'
+    excepted:
+      success: false
+      code: 20001
+      message: '用户名或密码错误'
+      status_code: 200
+
+- test:
+    title:
+      'password为None登陆'
+    ask:
+      'mobile': '13800000002'
+      'password': ~
+    excepted:
+      success: false
+      code: 20001
+      message: '用户名或密码错误'
+      status_code: 200
+
+- test:
+    title:
+      '多参数xxxx登陆'
+    ask:
+      'mobile': '13800000002'
+      'password': '123456'
+      'xxxx': 1575
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '参数password拼写错误passw1ord'
+    ask:
+      'mobile': '13800000002'
+      'passw1ord': '123456'
+    excepted:
+      success: false
+      code: 20001
+      message: '用户名或密码错误'
+      status_code: 200
+
+- test:
+    title:
+      'mobile参数为字符'
+    ask:
+      'mobile': 'ABS'
+      'passw1ord': '123456'
+    excepted:
+      success: false
+      code: 20001
+      message: '用户名或密码错误'
+      status_code: 200

@@ -1,0 +1,22 @@
+add_data:
+  name: "28s最强流程分析研究部"
+  code: 7777777
+  manager: 'MYQ'
+  introduce: '一个很垃圾的研究部'
+  pid: 9527
+  createTime: "2021-12-24T07:59:04.000+0000"
+
+modify_data:
+  introduce: '一个第二垃圾的研究部'
+
+expected:
+  success: true
+  code: 10000
+  message: '操作成功'
+  status_code: 200
+
+expected_delete:
+  success: false
+  code: 99999
+  message: '请稍后重试'
+  status_code: 200

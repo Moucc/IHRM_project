@@ -1,0 +1,1624 @@
+[2021-09-15 22:05:53] [ERROR :] 可太难了
+NoneType: None
+
+[2021-09-15 22:10:04] [ERROR]: 可太难了
+NoneType: None
+
+[2021-09-17 19:09:21] [ERROR]: 可太难了
+NoneType: None
+
+[2021-09-17 19:11:44] [ERROR]: 路径不存在
+NoneType: None
+
+[2021-09-17 19:12:30] [ERROR]: 路径不存在
+NoneType: None
+
+[2021-09-17 19:13:01] [ERROR]: 数据文件不存在
+NoneType: None
+
+[2021-09-17 19:13:13] [ERROR]: 数据文件不存在
+NoneType: None
+
+[2021-09-17 19:16:02] [ERROR]: 数据文件不存在
+NoneType: None
+
+[2021-09-17 19:17:01] [ERROR]: 数据文件不存在
+NoneType: None
+
+[2021-09-17 19:17:44] [ERROR]: 数据文件不存在
+NoneType: None
+
+[2021-09-17 19:18:38] [ERROR]: 数据文件不存在
+NoneType: None
+
+[2021-09-17 19:23:15] [ERROR]: D:\IHRM_project\dta\login_data.yaml路径不存在
+NoneType: None
+
+[2021-09-17 19:23:45] [ERROR]: D:\IHRM_project\dta路径不存在
+NoneType: None
+
+[2021-09-17 19:24:00] [ERROR]: D:\IHRM_project\data\login_d1ata.yaml数据文件不存在
+NoneType: None
+
+[2021-09-17 19:26:27] [ERROR]: 可太难了
+[2021-09-17 19:27:50] [ERROR]: error
+[2021-09-17 19:27:50] [CRITICAL]: critical
+[2021-09-17 19:27:50] [WARNING]: warning
+[2021-09-17 19:28:36] [ERROR]: error
+[2021-09-17 19:28:36] [CRITICAL]: critical
+[2021-09-17 19:28:36] [INFO]: info
+[2021-09-17 19:28:36] [WARNING]: warning
+[2021-09-17 19:28:36] [DEBUG]: debug
+[2021-09-17 20:09:42] [ERROR]: 
+[2021-09-17 20:09:42] [ERROR]: 
+[2021-09-17 21:22:16] [ERROR]: 
+[2021-09-17 21:22:16] [ERROR]: 
+[2021-09-17 21:22:50] [ERROR]: 
+[2021-09-17 21:22:50] [ERROR]: 
+[2021-09-17 21:35:31] [ERROR]: 
+[2021-09-17 21:35:31] [ERROR]: 
+[2021-09-17 21:36:26] [ERROR]: 
+[2021-09-17 21:36:26] [ERROR]: 
+[2021-09-17 21:40:11] [ERROR]: 
+[2021-09-17 21:40:11] [ERROR]: 
+[2021-09-17 21:43:15] [ERROR]: 
+[2021-09-17 21:43:38] [ERROR]: 
+[2021-09-17 21:44:15] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-17 21:44:15] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 20, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-17 21:45:33] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-17 21:45:33] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 20, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-17 21:48:43] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 20, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-17 21:50:40] [ERROR]: 
+[2021-09-17 21:55:05] [ERROR]: 
+[2021-09-17 21:55:35] [ERROR]: 
+[2021-09-17 22:27:46] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:01:33] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:33] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:33] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:01:34] [ERROR]: dirname() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 14, in get_token
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)), 'data', 'login_token.json'))
+TypeError: dirname() takes 1 positional argument but 3 were given
+
+[2021-09-19 11:09:52] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:10:30] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:12:39] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:16:19] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:16:20] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:21:18] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:21:19] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:29:45] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:29:46] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 11:29:46] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 37, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:47:29] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:47:30] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:47:31] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:47:31] [ERROR]: HTTPConnectionPool(host='ihrm-test.itheima.netapi', port=80): Max retries exceeded with url: /sys/user/1439429426361139200 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018157733490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Traceback (most recent call last):
+  File "E:\Python\Python38\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "E:\Python\Python38\lib\site-packages\urllib3\util\connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "E:\Python\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "E:\Python\Python38\lib\site-packages\urllib3\connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python\Python38\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python\Python38\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python\Python38\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python\Python38\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "E:\Python\Python38\lib\http\client.py", line 950, in send
+    self.connect()
+  File "E:\Python\Python38\lib\site-packages\urllib3\connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "E:\Python\Python38\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000018157733490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python\Python38\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "E:\Python\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "E:\Python\Python38\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='ihrm-test.itheima.netapi', port=80): Max retries exceeded with url: /sys/user/1439429426361139200 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018157733490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 52, in test_modify_employee
+    res = EmployeeManage().modify_employee(environment_url, Test_modify_employee.employee_id, modify_data, token)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\api\Employee_Manage.py", line 47, in modify_employee
+    res = requests.put(url= url, json= modify_data, headers= token)
+  File "E:\Python\Python38\lib\site-packages\requests\api.py", line 134, in put
+    return request('put', url, data=data, **kwargs)
+  File "E:\Python\Python38\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Python\Python38\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Python\Python38\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Python\Python38\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='ihrm-test.itheima.netapi', port=80): Max retries exceeded with url: /sys/user/1439429426361139200 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018157733490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+[2021-09-19 13:50:55] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:50:56] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:50:57] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:51:38] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:51:39] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:51:39] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:58:11] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:58:12] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:58:12] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:58:13] [ERROR]: assert '654321' == None
+  +'654321'
+  -None
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 71, in test_modify_employee
+    assert '654321' == res.json().get('data').get('password')
+AssertionError: assert '654321' == None
+  +'654321'
+  -None
+
+[2021-09-19 13:58:55] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:58:56] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 13:58:57] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:00:59] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:01:00] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:01:00] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:01:56] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:01:57] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:01:57] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:06:44] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:06:45] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:06:46] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:07:39] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:07:40] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:07:40] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 35, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-19 14:07:42] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 53, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 10:49:51] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:52] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:49:53] [ERROR]: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+Traceback (most recent call last):
+  File "D:\IHRM_project\conftest.py", line 44, in get_token
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\data\\login_token.json'
+
+[2021-09-20 10:53:23] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 10:53:24] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 10:53:24] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 10:53:25] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 10:53:26] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 98, in test_employee_manage
+    common_assert(res, data.get('expected_after_delete'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:09:46] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:09:48] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:09:49] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 99, in test_employee_manage
+    common_assert(res, data.get('expected_after_delete'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:09:49] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:10] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:10] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:11] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:11] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:11] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:11] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:12] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '部门名称1', 'workNumber': '166613', 'departmentId': '6666666667968001024', 'mobile': '13116664086', 'id': '1439429426361139200', 'username': 'jack1666t5111112'}}
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:12] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:13] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:13] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 84, in test_employee_manage
+    common_assert(res, data.get('expected'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:13] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': '5116a9ca-4b5a-4f09-884b-b2f7f90867e9'}
+Traceback (most recent call last):
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:32:13] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 19, in common_assert
+    raise e
+  File "D:\IHRM_project\utils\commen_assert.py", line 14, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:37:49] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:37:50] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:37:50] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:37:51] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '部门名称1', 'workNumber': '166613', 'departmentId': '6666666667968001024', 'mobile': '13116664086', 'id': '1439429426361139200', 'username': 'jack1666t5111112'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:37:52] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 85, in test_employee_manage
+    common_assert(res, data.get('expected'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:37:52] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:40:33] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:40:34] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:40:34] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 32, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:40:35] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '部门名称1', 'workNumber': '166613', 'departmentId': '6666666667968001024', 'mobile': '13116664086', 'id': '1439429426361139200', 'username': 'jack1666t5111112'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 50, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:40:36] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 87, in test_employee_manage
+    common_assert(res, data.get('expected'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 11:40:36] [ERROR]: 
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:26:16] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439928964863852544'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:26:17] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439928967128776704'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:26:17] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439928967812448256'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:28:50] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439929609515794432'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:28:51] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439929611801690112'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:28:51] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439929612502138880'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:31:35] [ERROR]: {'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:31:36] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439930304713293824'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:31:36] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439930306101608448'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:31:36] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439930306793668608'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:36:16] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439931478506045440'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:36:16] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439931480854855680'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:36:16] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439931481542721536'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 20:36:17] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439931482264141824'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 61, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:08:53] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439939688549941248'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 68, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:08:54] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439939690726785024'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 68, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:08:54] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439939691368513536'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 68, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:08:54] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439939692077350912'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 68, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:15:53] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439941448001748992'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:15:53] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439941450199564288'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:15:53] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439941450908401664'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:15:53] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439941451646599168'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:18:12] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942032159244288'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:18:12] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942034315116544'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:18:13] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942035082674176'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:18:13] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942035791511552'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:20:08] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942520694996992'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:20:09] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942522997669888'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:20:09] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942523672952832'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:20:09] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942524406956032'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:20:10] [ERROR]: {'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+common_assert() missing 1 required positional argument: 'expected'
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 94, in test_manage_department
+    common_assert(data.get('expected_delete'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+TypeError: common_assert() missing 1 required positional argument: 'expected'
+
+[2021-09-20 21:21:16] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942803999260672'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:16] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942806142550016'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:17] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942806859776000'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:17] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439942807556030464'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:17] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:18] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:18] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:19] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '部门名称1', 'workNumber': '166613', 'departmentId': '6666666667968001024', 'mobile': '13116664086', 'id': '1439429426361139200', 'username': 'jack1666t5111112'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:20] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 86, in test_employee_manage
+    common_assert(res, data.get('expected'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:21:20] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': '0a4e3589-f01f-4be8-ad80-790669da6257'}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:36] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439943391545753600'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:37] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439943393751957504'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:37] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439943394423046144'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:37] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439943395152855040'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_department_manage.py", line 69, in test_add_department
+    common_assert(res, excepted)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:37] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:38] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:38] [ERROR]: {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:40] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '部门名称1', 'workNumber': '166613', 'departmentId': '6666666667968001024', 'mobile': '13116664086', 'id': '1439429426361139200', 'username': 'jack1666t5111112'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:40] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1439943408415145984', 'mobile': '13116933086', 'username': 'user0920', 'enableState': 1, 'departmentId': '1266699057968001024', 'timeOfEntry': '2020-07-09T00:00:00.000+0000', 'formOfEmployment': 1, 'workNumber': '169333', 'departmentName': '销售', 'roleIds': [], 'staffPhoto': None}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 101, in test_employee_manage
+    common_assert(res, data.get('expected_after_delete'))
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+
+[2021-09-20 21:23:41] [ERROR]: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': '5849625c-836e-4797-8e5f-a62f425c90d9'}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_login.py", line 21, in test_login
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError
+

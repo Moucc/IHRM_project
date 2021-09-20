@@ -1,0 +1,208 @@
+{
+  "uid" : "dc9471fa52b62b51",
+  "name" : "name为空，新增失败",
+  "fullName" : "testcase.test_department_manage.Test_department_manage#test_add_department",
+  "historyId" : "0ddf814600043989cbd27766d9f07ab7",
+  "time" : {
+    "start" : 1632144076339,
+    "stop" : 1632144076419,
+    "duration" : 80
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <testcase.test_department_manage.Test_department_manage object at 0x00000160EE9D01C0>\nenvironment_url = 'http://ihrm-test.itheima.net'\nget_token = {'Authorization': 'Bearer be5a798f-f524-4dd2-b25a-ffa3c467ef55'}\ntitle = 'name为空，新增失败', ask = {'code': 9527, 'name': None}\nexcepted = {'code': 99999, 'message': '请稍后重试', 'status_code': 200, 'success': False}\n\n    @allure.story('新增部门信息-数据驱动测试')\n    @allure.title('{title}')\n    @pytest.mark.usefixtures('re_login')\n    @pytest.mark.parametrize('title, ask, excepted', My_return_data.return_test_data('add_department.yaml'))\n    def test_add_department(self, environment_url, get_token, title, ask, excepted):\n        try:\n            res = Department_Manage().add_department(environment_url, get_token, ask)\n            common_assert(res, excepted)\n        except Exception as e:\n            err = str(res.json()) + '\\n' + str(e)\n            MyLog.error(err)\n>           raise e\n\ntest_department_manage.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_department_manage.py:69: in test_add_department\n    common_assert(res, excepted)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>\nexpected = {'code': 99999, 'message': '请稍后重试', 'status_code': 200, 'success': False}\n\n    @allure.step('进行断言')\n    def common_assert(res, expected):\n        '''\n        对响应体进行断言\n        :param res: 请求响应体\n        :param expected: 字典：{success: true， code: 10000， message: '操作成功'， status_code: 200}\n        :return:assert断言\n        '''\n        assert expected.get('status_code') == res.status_code\n>       assert expected.get('code') == res.json().get('code')\nE       AssertionError\n\n..\\utils\\commen_assert.py:13: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "从config.yaml获取环境IP",
+    "time" : {
+      "start" : 1632144076259,
+      "stop" : 1632144076260,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "获取token",
+    "time" : {
+      "start" : 1632144076335,
+      "stop" : 1632144076338,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "前置登陆操作",
+    "time" : {
+      "start" : 1632144076260,
+      "stop" : 1632144076335,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登陆操作",
+      "time" : {
+        "start" : 1632144076261,
+        "stop" : 1632144076334,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "login_data",
+        "value" : "{'mobile': '13800000002', 'password': '123456'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <testcase.test_department_manage.Test_department_manage object at 0x00000160EE9D01C0>\nenvironment_url = 'http://ihrm-test.itheima.net'\nget_token = {'Authorization': 'Bearer be5a798f-f524-4dd2-b25a-ffa3c467ef55'}\ntitle = 'name为空，新增失败', ask = {'code': 9527, 'name': None}\nexcepted = {'code': 99999, 'message': '请稍后重试', 'status_code': 200, 'success': False}\n\n    @allure.story('新增部门信息-数据驱动测试')\n    @allure.title('{title}')\n    @pytest.mark.usefixtures('re_login')\n    @pytest.mark.parametrize('title, ask, excepted', My_return_data.return_test_data('add_department.yaml'))\n    def test_add_department(self, environment_url, get_token, title, ask, excepted):\n        try:\n            res = Department_Manage().add_department(environment_url, get_token, ask)\n            common_assert(res, excepted)\n        except Exception as e:\n            err = str(res.json()) + '\\n' + str(e)\n            MyLog.error(err)\n>           raise e\n\ntest_department_manage.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_department_manage.py:69: in test_add_department\n    common_assert(res, excepted)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>\nexpected = {'code': 99999, 'message': '请稍后重试', 'status_code': 200, 'success': False}\n\n    @allure.step('进行断言')\n    def common_assert(res, expected):\n        '''\n        对响应体进行断言\n        :param res: 请求响应体\n        :param expected: 字典：{success: true， code: 10000， message: '操作成功'， status_code: 200}\n        :return:assert断言\n        '''\n        assert expected.get('status_code') == res.status_code\n>       assert expected.get('code') == res.json().get('code')\nE       AssertionError\n\n..\\utils\\commen_assert.py:13: AssertionError",
+    "steps" : [ {
+      "name" : "添加部门",
+      "time" : {
+        "start" : 1632144076339,
+        "stop" : 1632144076417,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer be5a798f-f524-4dd2-b25a-ffa3c467ef55'}"
+      }, {
+        "name" : "add_data",
+        "value" : "{'name': None, 'code': 9527}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144076417,
+        "stop" : 1632144076417,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"E:\\Python\\Python38\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\IHRM_project\\utils\\commen_assert.py\", line 13, in common_assert\n    assert expected.get('code') == res.json().get('code')\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "45a53d4b79f388f8",
+      "name" : "log",
+      "source" : "45a53d4b79f388f8.txt",
+      "type" : "text/plain",
+      "size" : 561
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "基本信息管理模块"
+  }, {
+    "name" : "feature",
+    "value" : "部门管理模块"
+  }, {
+    "name" : "story",
+    "value" : "新增部门信息-数据驱动测试"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('re_login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_department_manage"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_department_manage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-LM9EFOVP"
+  }, {
+    "name" : "thread",
+    "value" : "9360-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_department_manage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "ask",
+    "value" : "{'name': None, 'code': 9527}"
+  }, {
+    "name" : "excepted",
+    "value" : "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}"
+  }, {
+    "name" : "title",
+    "value" : "'name为空，新增失败'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('re_login')" ]
+  },
+  "source" : "dc9471fa52b62b51.json",
+  "parameterValues" : [ "{'name': None, 'code': 9527}", "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}", "'name为空，新增失败'" ]
+}

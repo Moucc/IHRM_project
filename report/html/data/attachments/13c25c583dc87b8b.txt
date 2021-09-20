@@ -1,0 +1,10 @@
+ERROR    utils.MyLog:MyLog.py:42 {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '部门名称1', 'workNumber': '166613', 'departmentId': '6666666667968001024', 'mobile': '13116664086', 'id': '1439429426361139200', 'username': 'jack1666t5111112'}}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 49, in test_modify_employee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError

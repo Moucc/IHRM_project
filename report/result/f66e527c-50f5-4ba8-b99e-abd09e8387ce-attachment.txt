@@ -1,0 +1,10 @@
+ERROR    utils.MyLog:MyLog.py:42 {'success': False, 'code': 20002, 'message': '新增员工失败', 'data': None}
+
+Traceback (most recent call last):
+  File "D:\IHRM_project\testcase\test_employee_manage.py", line 31, in test_add_empolyee
+    common_assert(res, expected)
+  File "E:\Python\Python38\lib\site-packages\allure_commons\_allure.py", line 172, in impl
+    return func(*a, **kw)
+  File "D:\IHRM_project\utils\commen_assert.py", line 13, in common_assert
+    assert expected.get('code') == res.json().get('code')
+AssertionError

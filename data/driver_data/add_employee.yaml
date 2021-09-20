@@ -1,0 +1,163 @@
+- test:
+    title:
+      '成功新增员工jack1666t9551965'
+    ask:
+      "username": "jack1666t1951965"
+      "mobile": "13116954965"
+      "timeOfEntry": "2020-07-09"
+      "formOfEmployment": 1
+      "workNumber": "169653"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+      "correctionTime": "2020-07-30T16:00:00.000Z"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-少参username'
+    ask:
+      "mobile": "13421114086"
+      "timeOfEntry": "2020-07-09"
+      "formOfEmployment": 1
+      "workNumber": "126513"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+      "correctionTime": "2020-07-30T16:00:00.000Z"
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-多参xxxx'
+    ask:
+      "username": "jack1111t1651112"
+      "mobile": "13111114086"
+      "timeOfEntry": "2020-07-09"
+      "formOfEmployment": 1
+      "workNumber": "121113"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+      "correctionTime": "2020-07-30T16:00:00.000Z"
+      "xxxx": 153268
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-错参usename1'
+    ask:
+      "username1": "jack2222t1651112"
+      "mobile": "13421224086"
+      "timeOfEntry": "2020-07-09"
+      "formOfEmployment": 1
+      "workNumber": "122213"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+      "correctionTime": "2020-07-30T16:00:00.000Z"
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-username为空'
+    ask:
+      "username": ~
+      "mobile": "13421224086"
+      "timeOfEntry": "2020-07-09"
+      "formOfEmployment": 1
+      "workNumber": "122213"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+      "correctionTime": "2020-07-30T16:00:00.000Z"
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工jack2666t1965112-只有必填项'
+    ask:
+      "username": "jack2666t1965112"
+      "mobile": "13426965086"
+      "workNumber": "199653"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+
+- test:
+    title:
+      '成功新增员工jack1666t1696512-必填项+部分选填项'
+    ask:
+      "username": "jack1666t1696512"
+      "mobile": "1311965226"
+      "workNumber": "169653"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+    excepted:
+      success: true
+      code: 10000
+      message: '操作成功'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-mobile少2位'
+    ask:
+      "username": "jack2211t1444412"
+      "mobile": "134244441"
+      "workNumber": "144443"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-workNumber少2位'
+    ask:
+      "username": "jack2211t1666612"
+      "mobile": "13426666186"
+      "workNumber": "1213"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200
+
+- test:
+    title:
+      '新增员工-必填项重复'
+    ask:
+      "username": "jack2211t1111112"
+      "mobile": "13421111186"
+      "workNumber": "121113"
+      "departmentName": "销售"
+      "departmentId": "1266699057968001024"
+    excepted:
+      success: false
+      code: 20002
+      message: '新增员工失败'
+      status_code: 200

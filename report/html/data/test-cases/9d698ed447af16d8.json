@@ -1,0 +1,206 @@
+{
+  "uid" : "9d698ed447af16d8",
+  "name" : "（全必填项）成功新增部门：28s测试研究部1分队",
+  "fullName" : "testcase.test_department_manage.Test_department_manage#test_add_department",
+  "historyId" : "6916f2683f70b8dc1b45dce9e5cfe36e",
+  "time" : {
+    "start" : 1632144216258,
+    "stop" : 1632144216333,
+    "duration" : 75
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "前置登陆操作",
+    "time" : {
+      "start" : 1632144216184,
+      "stop" : 1632144216251,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登陆操作",
+      "time" : {
+        "start" : 1632144216184,
+        "stop" : 1632144216251,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "login_data",
+        "value" : "{'mobile': '13800000002', 'password': '123456'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "获取token",
+    "time" : {
+      "start" : 1632144216252,
+      "stop" : 1632144216257,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "从config.yaml获取环境IP",
+    "time" : {
+      "start" : 1632144216183,
+      "stop" : 1632144216184,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "添加部门",
+      "time" : {
+        "start" : 1632144216258,
+        "stop" : 1632144216332,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer c6e47bca-2e3f-4b85-8266-32c2b3114238'}"
+      }, {
+        "name" : "add_data",
+        "value" : "{'name': '28s测试研究部', 'code': 9527, 'createTime': 'XXX时间'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144216333,
+        "stop" : 1632144216333,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "基本信息管理模块"
+  }, {
+    "name" : "feature",
+    "value" : "部门管理模块"
+  }, {
+    "name" : "story",
+    "value" : "新增部门信息-数据驱动测试"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('re_login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_department_manage"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_department_manage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-LM9EFOVP"
+  }, {
+    "name" : "thread",
+    "value" : "13272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_department_manage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "ask",
+    "value" : "{'name': '28s测试研究部', 'code': 9527, 'createTime': 'XXX时间'}"
+  }, {
+    "name" : "excepted",
+    "value" : "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}"
+  }, {
+    "name" : "title",
+    "value" : "'（全必填项）成功新增部门：28s测试研究部1分队'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a9eab24f60ac3fbb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632144076181,
+        "stop" : 1632144076251,
+        "duration" : 70
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('re_login')" ]
+  },
+  "source" : "9d698ed447af16d8.json",
+  "parameterValues" : [ "{'name': '28s测试研究部', 'code': 9527, 'createTime': 'XXX时间'}", "{'success': False, 'code': 99999, 'message': '请稍后重试', 'status_code': 200}", "'（全必填项）成功新增部门：28s测试研究部1分队'" ]
+}

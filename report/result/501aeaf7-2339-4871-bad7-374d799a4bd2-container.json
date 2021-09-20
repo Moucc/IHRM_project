@@ -1,0 +1,1 @@
+{"uuid": "64d29d09-d18d-4240-b305-da6fbb4d76f1", "children": ["ee24f965-9ce6-4de9-8973-16ae845c51a5"], "befores": [{"name": "从config.yaml获取环境IP", "status": "passed", "start": 1632144079023, "stop": 1632144079024}], "start": 1632144079023, "stop": 1632144079169}

@@ -1,0 +1,196 @@
+{
+  "uid" : "90a1d5e7658242b0",
+  "name" : "新增员工-必填项重复",
+  "fullName" : "testcase.test_employee_manage.Test_add_employee#test_add_empolyee",
+  "historyId" : "c0c1374761bdf83c2eb6a3568a428b4a",
+  "time" : {
+    "start" : 1632144079256,
+    "stop" : 1632144079329,
+    "duration" : 73
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "获取token",
+    "time" : {
+      "start" : 1632144079250,
+      "stop" : 1632144079255,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "前置登陆操作",
+    "time" : {
+      "start" : 1632144079173,
+      "stop" : 1632144079249,
+      "duration" : 76
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登陆操作",
+      "time" : {
+        "start" : 1632144079173,
+        "stop" : 1632144079249,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "login_data",
+        "value" : "{'mobile': '13800000002', 'password': '123456'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "从config.yaml获取环境IP",
+    "time" : {
+      "start" : 1632144079172,
+      "stop" : 1632144079173,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送新增员工请求，获取响应体",
+      "time" : {
+        "start" : 1632144079256,
+        "stop" : 1632144079328,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://ihrm-test.itheima.net'"
+      }, {
+        "name" : "add_data",
+        "value" : "{'username': 'jack2211t1111112', 'mobile': '13421111186', 'workNumber': '121113', 'departmentName': '销售', 'departmentId': '1266699057968001024'}"
+      }, {
+        "name" : "token",
+        "value" : "{'Authorization': 'Bearer 31b02c5a-5c24-49bb-b787-d0061225c69b'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进行断言",
+      "time" : {
+        "start" : 1632144079328,
+        "stop" : 1632144079329,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "res",
+        "value" : "<Response [200]>"
+      }, {
+        "name" : "expected",
+        "value" : "{'success': False, 'code': 20002, 'message': '新增员工失败', 'status_code': 200}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "基本信息管理模块"
+  }, {
+    "name" : "feature",
+    "value" : "新增员工测试"
+  }, {
+    "name" : "story",
+    "value" : "员工新增数据驱动测试"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('re_login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_employee_manage"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_add_employee"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-LM9EFOVP"
+  }, {
+    "name" : "thread",
+    "value" : "9360-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_employee_manage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "add_data",
+    "value" : "{'username': 'jack2211t1111112', 'mobile': '13421111186', 'workNumber': '121113', 'departmentName': '销售', 'departmentId': '1266699057968001024'}"
+  }, {
+    "name" : "expected",
+    "value" : "{'success': False, 'code': 20002, 'message': '新增员工失败', 'status_code': 200}"
+  }, {
+    "name" : "title",
+    "value" : "'新增员工-必填项重复'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('re_login')" ]
+  },
+  "source" : "90a1d5e7658242b0.json",
+  "parameterValues" : [ "{'username': 'jack2211t1111112', 'mobile': '13421111186', 'workNumber': '121113', 'departmentName': '销售', 'departmentId': '1266699057968001024'}", "{'success': False, 'code': 20002, 'message': '新增员工失败', 'status_code': 200}", "'新增员工-必填项重复'" ]
+}
